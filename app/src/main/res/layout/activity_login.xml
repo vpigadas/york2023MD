@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".LoginActivity">
+
+	<TextView
+		android:id="@+id/login_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:padding="16dp"
+		android:text="Login Page"
+		android:textSize="20sp"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/textField_username"
+		style="?attr/textInputOutlinedStyle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="16dp"
+		android:hint="@string/demo_text"
+		app:layout_constraintTop_toBottomOf="@id/login_title"
+		app:passwordToggleEnabled="true">
+
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/main_edit_username"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="numberPassword"
+			android:text="@string/app_name" />
+
+	</com.google.android.material.textfield.TextInputLayout>
+
+	<com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/textField_password"
+		style="?attr/textInputOutlinedStyle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="16dp"
+		android:hint="@string/demo_text"
+		app:layout_constraintTop_toBottomOf="@id/textField_username"
+		app:passwordToggleEnabled="true">
+
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/main_edit_password"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="numberPassword"
+			android:text="@string/app_name" />
+
+	</com.google.android.material.textfield.TextInputLayout>
+
+	<Button
+		android:id="@+id/login_btn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="32dp"
+		android:text="Login"
+		app:layout_constraintEnd_toEndOf="@id/textField_password"
+		app:layout_constraintTop_toBottomOf="@id/textField_password" />
+
+		<TextView
+			android:id="@+id/login_forgot"
+			app:layout_constraintTop_toBottomOf="@id/textField_password"
+			app:layout_constraintStart_toStartOf="@id/textField_password"
+			app:layout_constraintEnd_toStartOf="@id/login_btn"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Forgot Password" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
