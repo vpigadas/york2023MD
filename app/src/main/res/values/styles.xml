@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Blue_Button" parent="@style/ThemeOverlay.Material3.Button">
+		<item name="android:backgroundTint">#FFFF0000</item>
+	</style>
+</resources>
