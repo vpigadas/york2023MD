@@ -7,9 +7,9 @@ import androidx.annotation.NonNull;
 
 import gr.york.md.R;
 
-public class CustomHolder extends CustomHolderClass {
+public class CustomHolder2 extends CustomHolderClass {
 
-    public CustomHolder(@NonNull View itemView) {
+    public CustomHolder2(@NonNull View itemView) {
         super(itemView);
     }
 

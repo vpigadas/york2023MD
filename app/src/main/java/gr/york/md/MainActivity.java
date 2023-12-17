@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import gr.york.md.network.NetworkActivity;
 import gr.york.md.recyclerview.ListActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -61,6 +62,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button btnNetwork = findViewById(R.id.main_btn_net);
+        btnNetwork.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NetworkActivity.class);
                 startActivity(intent);
             }
         });

@@ -4,23 +4,20 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context=".recyclerview.ListActivity">
+	tools:context=".network.NetworkActivity">
 
-	<androidx.recyclerview.widget.RecyclerView
-		android:id="@+id/recyclerview"
+	<TextView
+		android:id="@+id/text"
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
-		android:orientation="vertical"
-		app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-		app:layout_constraintBottom_toTopOf="@id/addMore"
-		app:layout_constraintTop_toTopOf="parent"
-		app:spanCount="@integer/span_count" />
+		app:layout_constraintBottom_toTopOf="@id/btn"
+		app:layout_constraintTop_toTopOf="parent" />
 
 	<Button
-		android:id="@+id/addMore"
+		android:id="@+id/btn"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="Add new Item"
+		android:text="REQUEST"
 		app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
