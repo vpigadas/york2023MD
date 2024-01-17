@@ -39,7 +39,8 @@ public class NetworkActivity extends AppCompatActivity {
         RequestQueue queue = Volley.newRequestQueue(this);
 
         String endpoint = "https://dog.ceo/api/breeds/image/random";
-        StringRequest request = new StringRequest(Request.Method.GET, endpoint, new Response.Listener<String>() {
+        StringRequest request = new StringRequest(Request.Method.GET, endpoint,
+                new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Log.d("NETWORK", response);
