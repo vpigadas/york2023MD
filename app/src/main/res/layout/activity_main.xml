@@ -79,4 +79,10 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:text="Networking" />
+
+	<Button
+		android:id="@+id/main_btn_frag"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Fragment" />
 </LinearLayout>

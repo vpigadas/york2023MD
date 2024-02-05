@@ -29,7 +29,7 @@ public interface UserDaoOverStreams {
     void update(UserEntity data) throws Exception;
 
     @Delete
-    boolean delete(UserEntity data);
+    void delete(UserEntity data);
 
     @Query("SELECT * FROM User")
     @NotNull

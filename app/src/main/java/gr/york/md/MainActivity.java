@@ -15,10 +15,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import gr.york.md.fragment.FragmActivity;
 import gr.york.md.network.NetworkActivity;
 import gr.york.md.recyclerview.ListActivity;
 
 public class MainActivity extends AppCompatActivity {
+
+    private String name;
+    private final String type = "";
+    private int ears = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +75,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, NetworkActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnFragment = findViewById(R.id.main_btn_frag);
+        btnFragment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FragmActivity.class);
                 startActivity(intent);
             }
         });

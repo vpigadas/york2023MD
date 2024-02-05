@@ -16,6 +16,9 @@
 		android:theme="@style/Theme.York2023MD"
 		tools:targetApi="31">
 		<activity
+			android:name=".fragment.FragmActivity"
+			android:exported="false" />
+		<activity
 			android:name=".viewmodel.MainActivity"
 			android:exported="false" />
 		<activity

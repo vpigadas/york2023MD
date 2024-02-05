@@ -1,5 +1,6 @@
 package gr.york.md.storage;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -12,6 +13,7 @@ public class UserEntity {
 //    private int id;
 
     @ColumnInfo(name = "name")
+    @NonNull
     private String name;
     @ColumnInfo(name = "age")
     private int age;

@@ -2,4 +2,6 @@
 	<string name="app_name" translatable="false">York2023MD</string>
 	<string name="dev_name">Vassilis Pigadas</string>
 	<string name="demo_text">Demo</string>
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
